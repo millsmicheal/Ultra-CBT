@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+
+    <link rel="stylesheet" href="workingpage.css" />
+  </head>
+  <body>
+    <div class="parent-container">
+      <div class="introduction-div">
+        <div class="user-details">
+          <h4 class="user-name">Daniel James</h4>
+          <p class="user-id">(User: BBA/AC/2025/00251)</p>
+        </div>
+        <div class="bio-data-1">
+          <img src="images/workingpage img.png" alt="" width="150" />
+
+          <p class="timer-btn" id="countdown-btn">25:00</p>
+        </div>
+
+        <div class="question-btn">
+          <button>Next Question</button>
+          <button>Last Question</button>
+        </div>
+      </div>
+
+      <!-- the second section -->
+
+      <div class="second-section">
+        <div class="second-section-heading">
+          <div class="grade-div">
+            <div class="subject-div">
+            <img src="images/raphael_book.png" alt="" /> INTRODUCTION TO
+            COMPUTER 105
+          </div>
+            <img src="images/Ellipse 2.png" alt="" width="54">
+          </div>
+        </div>
+        <div class="second-section-txt">
+
+          
+            <div class="question">
+              <h4>QUESTION 1</h4>
+              <p>What is the foundation and possible ehancement procedure of the first generation <br> computer in this mordern world</p>
+              <br><br>
+              <div class="options-div">
+             
+              <label for="option1"> <input type="radio">A: Computer Degeneration</label>
+            <br>
+              
+              <label for="option2"> <input type="radio">B: Delight</label>
+            <br>
+             
+              <label for="option3">  <input type="radio"> C: Virtual Games</label>
+            <br>
+              <label for="option4"> <input type="radio">D: Sport </label>
+            </div>
+            </div>
+           
+          
+        </div>
+        <div class="numbers">
+          <div class="numb-section">
+          <button><a href="#">1</a></button>
+          <button><a href="#">2</a></button>
+          <button><a href="#">3</a></button>
+          <button><a href="#">4</a></button>
+          <button><a href="#">5</a></button>
+          <button><a href="#">6</a></button>
+          <button><a href="#">7</a></button>
+          <button><a href="#">8</a></button>
+          <button><a href="#">9</a></button>
+          <button><a href="#">10</a></button>
+           
+        </div>
+        <div class="numb-section">
+          <button><a href="#">11</a></button>
+          <button><a href="#">12</a></button>
+          <button><a href="#">13</a></button>
+          <button><a href="#">14</a></button>
+          <button><a href="#">15</a></button>
+          <button><a href="#">16</a></button>
+          <button><a href="#">17</a></button>
+          <button><a href="#">18</a></button>
+          <button><a href="#">19</a></button>
+          <button><a href="#">20</a></button>
+
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      
+      const startingMinutes = 25;
+      let time = startingMinutes * 60;
+
+const countdownEl = document.getElementById('countdown-btn');
+
+ setInterval (updateCountdown, 1000);
+
+ function updateCountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
+    time--;
+    
+ } -->
+
+
+    <!-- </script> -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
