@@ -143,44 +143,30 @@ body{
   font-size: 20px;
   font-weight: 500;
   margin-top: 1vh;
+  margin-bottom: 4vh;
 }
 
-.right-side form{
-  width: 40%;
-  margin-top: 5vh;
-  margin-left: 8% ;
+.right-side .question{
+  display: none;
 }
 
-.right-side form p{
- display: block;
- font-size:  20px;
- font-style: medium;
- font-weight: 500;
- align-self: last baseline;
- 
+.right-side #question1{
+  display: block;
 }
 
-.right-side form nav{
+.options-div{
+  margin-left: 7%;
   display: flex;
-  justify-content: left;
-  text-align: left;
-}
-
-.right-side form nav input{
-  vertical-align: bottom;
-  align-self: last baseline;
-  cursor: pointer;
-  width: 15px;
-  /* background-color: #CACACA; */
-  /* outline: none; */
-  height: 15px;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: 20px;
 }
 
 .right-side .numbers{
   width: 60%;
   height: 14vh;
   margin: 0 auto;
-  margin-top: 21vh;
+  margin-top: 20vh;
 }
 
 .right-side .numbers nav{
@@ -197,7 +183,8 @@ body{
   width: 45px;
   height: 44px;
   background-color: #000049;
-  box-shadow: 3px 3px 4px #706f6f
+  box-shadow: 3px 3px 4px #706f6f;
+  cursor: pointer;
 }
 
 .numbers .button{
