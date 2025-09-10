@@ -10,7 +10,7 @@ const countdownEl = document.getElementById('countdown-btn');
     const minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
-    countdownEl.innerHTML = `${minutes}: ${seconds}`;
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
     time--;
     
  }
