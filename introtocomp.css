@@ -69,13 +69,15 @@ body{
   margin-top: 7vh;
 }
 
-.left-side .timer{
+.left-side nav button{
   width: 80%;
   background-color: #000000;
   height: 13vh;
   margin: 2vh auto;
+  margin-left: 11%;
   border-radius: 18px;
   margin-bottom: 13vh;
+  font-size: 70px;
 }
 
 .left-side button{
@@ -95,7 +97,8 @@ body{
   width: 80%;
   height: 90vh;
   background-color: #FFFFFF;
-  border-bottom-right-radius: 25px;     border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;   
+  border-top-right-radius: 25px;
 }
 
 .right-side header{
@@ -104,20 +107,18 @@ body{
   width: 100%;
   height: 10vh;  
   border-top-right-radius: 25px;
-}
+  justify-content: center;
+align-items: center;}
 
 .right-side header img{
-  width: 31px;
-  height: 31px;
-  align-self: center;
-  margin-left: 7%;
+  width: 30px;  margin-left: 7%;
 }
 
 .right-side header p{
  font-weight: 400;
  font-size: 22px;
  font-style: bold;
- align-self: center;
+ align-self: last baseline;
  margin-left: 1.5%;
 }
 
@@ -143,44 +144,34 @@ body{
   font-size: 20px;
   font-weight: 500;
   margin-top: 1vh;
+  margin-bottom: 4vh;
 }
 
-.right-side form{
-  width: 40%;
-  margin-top: 5vh;
-  margin-left: 8% ;
+.right-side .question{
+  display: none;
 }
 
-.right-side form p{
- display: block;
- font-size:  20px;
- font-style: medium;
- font-weight: 500;
- align-self: last baseline;
- 
+.right-side #question1{
+  display: block;
 }
 
-.right-side form nav{
+.options-div{
+  margin-left: 7%;
   display: flex;
-  justify-content: left;
-  text-align: left;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: 20px;
 }
 
-.right-side form nav input{
-  vertical-align: bottom;
-  align-self: last baseline;
-  cursor: pointer;
-  width: 15px;
-  /* background-color: #CACACA; */
-  /* outline: none; */
-  height: 15px;
+.options-div pre{
+  display: inline;
 }
 
 .right-side .numbers{
   width: 60%;
   height: 14vh;
   margin: 0 auto;
-  margin-top: 21vh;
+  margin-top: 20vh;
 }
 
 .right-side .numbers nav{
@@ -197,11 +188,10 @@ body{
   width: 45px;
   height: 44px;
   background-color: #000049;
-  box-shadow: 3px 3px 4px #706f6f
+  box-shadow: 3px 3px 4px #706f6f;
+  cursor: pointer;
 }
 
 .numbers .button{
   color: #3AB027;
 }
-
-
