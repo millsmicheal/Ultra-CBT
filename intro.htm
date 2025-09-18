@@ -16,10 +16,10 @@
        <nav>
         <button id="countdown-btn"></button>
        </nav>
-       <button>
+       <button onclick="nextQuestion()">
         Next Question
        </button>
-       <button>
+       <button  onclick="prevQuestion()">
         Last Question
        </button>
     </div>
@@ -205,7 +205,7 @@
         
         <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Loading the operating system into memory.
         </label>
-      <br> name="quiz" D: Installing software.
+      <br> D: Installing software.
         </label>
       </div>
     </div>
@@ -233,7 +233,7 @@
         </label>
       <br>
         <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Device Drivers.
-        </label> name="quiz"
+        </label>
       </div>
     </div>
     <!-- Answer: C) Word Processor -->
@@ -575,6 +575,7 @@
 
     <script src="./intro.js"></script>
     <script src="./script.js"></script>
+    <script src="./prev&next.js"></script>
 
 </body>
 </html>

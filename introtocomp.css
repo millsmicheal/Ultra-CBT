@@ -88,6 +88,7 @@ body{
   font-size: 22px;
   width: 60%;
   background-color:#3AB027 ;
+  cursor: pointer;
   color: #FFFFFF;
   border: none;
   border-radius: 10px;
@@ -165,6 +166,10 @@ align-items: center;}
 
 .options-div pre{
   display: inline;
+}
+
+input{
+  cursor: pointer;
 }
 
 .right-side .numbers{
