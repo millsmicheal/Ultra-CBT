@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+    background-color: #0F0065;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font: inter;
+  }
+  
+  .container{
+    width: 92%;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 25px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* gap: 30px; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+  }
+  .left-side{
+    align-items: center;
+    text-align: center;
+  }
+  .daniel-1{
+    color: #FF0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    /* font-weight: 900; */
+    
+  }
+  .bio-data{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  
+  .container .left-side{
+    background-color: #C8C8C8;
+    height: 90vh;
+    width: 24%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-side header{
+    background-color: #3AB027;
+    width: 100%;
+    height: 10vh;
+    border-top-left-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .left-side header h2{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  .left-side header p {
+    color: #000000;
+    font-size: 18px;
+    font-style: regular;
+    font-weight: 400;
+  }
+  
+  .left-side img{
+    width: 50%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+    margin-top: 7vh;
+  }
+  
+  .left-side .timer{
+    width: 80%;
+    background-color: #000000;
+    height: 13vh;
+    margin: 2vh auto;
+    border-radius: 18px;
+    margin-bottom: 13vh;
+  }
+  
+  .left-side button{
+    height: 6vh;
+    margin: 2vh auto;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 22px;
+    width: 60%;
+    background-color:#3AB027 ;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .right-side{
+    /* width: 118%; */
+    /* height: 90vh; */
+    background-color: #FFFFFF;
+    border-bottom-right-radius: 25px;     border-top-right-radius: 25px;
+    
+   
+  }
+  
+  .right-side header{
+    display: flex;
+    background-color: #C8C8C8;
+    /* width: 100%; */
+    height: 10vh;  
+    border-top-right-radius: 25px;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .right-side header img{
+    width: 31px;
+    height: 31px;
+    align-self: center;
+    margin-left: 7%;
+  }
+  
+  .right-side header p{
+   font-weight: 400;
+   font-size: 22px;
+   font-style: bold;
+   align-self: center;
+   margin-left: 1.5%;
+  }
+  .second-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
+    
+  }
+  .cont-for-SI{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+    .cont-for-SI h2{
+      color: red;
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+    .subject-parent{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .course-title{
+      /* font-family: ; */
+      font-size: 15px;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+    .subject p{
+      margin-left: 15px;
+      font-family: sans-serif;
+      font-size: 15px;
+      
+
+    }
+      .cont-for-SI .subject{
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 5px;
+        text-align: center;
+        box-shadow: 5px 5px 5px 5px grey;
+        border-radius: 20px;
+        
+
+      }
+      .course{
+        /* text-align: left; */
+        
+      }
+      .gst{
+        margin-right: 50px;
+        /* border: 1px solid red; */
+      }
+      .subject-btn {
+        display: flex;
+        gap: 10px;
+        margin-right: 15px;
+        
+      }
+       .subject-btn button{
+        padding: 5px;
+        font-family: sans-serif;
+      
+       }
+       .instructions{
+        font-family: sans-serif;
+        font-size: 15px;
+       }
+       .exam-time{
+        background-color: #000049;
+        color: #FFFFFF;
+        border: none;
+        font-family: sans-serif;
+        border-radius: 5px;
+        font-weight: 700;
+       }
+       .start-btn{
+        background-color: gray;
+        color: #000049;
+        border: none;
+        font-family: sans-serif;
+        border-radius: 5px;
+        font-weight: 700;
+       }
+       

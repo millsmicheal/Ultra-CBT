@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ultra CBT</title>
+</head>
+<body>
+    <!-- This is the Login page -->
+     <div class="container">
+
+      <div class="left-side">
+
+        <div class="login">
+          <button>LOGIN</button>
+          <form action="">
+            <h2>
+              Welcome.
+            </h2>
+            <p>
+              Login to your account
+            </p>
+
+            <p class="label1">Username</p>
+            <img src="./images/ICON.png" alt="" class="img1">
+            <input type="text" placeholder="Your name">
+
+             <p class="label2">Password</p>
+            <img src="images/ICON.png" alt="" class="img2">
+            <input type="password" placeholder="Your matric number" class=" js-password ">
+            <img src="images/zondicons_view-show.png" alt="" class="js-eyeclosed">
+           
+          </form>
+        </div>
+
+        <div class="register">
+          <a href="#">Reset Password</a>
+        <a href="#">
+          <button>Login</button>
+        </a>
+        </div>
+
+      </div>
+      <div class="right-side">
+        <img src="./images/BBT LOGO 1 (1).png" alt="" >
+        <img src="./images/Brainbench Technology.png" alt="" class="bba" >
+        <img src="./images/Computer Based Test.png" alt="" class="computer">
+      </div>
+     </div>  
+     
+     <script>
+        const jsEyeclosed = () => {
+          let password = document.querySelector(".js-password"); // use . for class
+          if (password.type === "password") {
+            password.type = "text";
+          } else {
+            password.type = "password";
+          }
+            console.log(password)
+        };
+
+        document.querySelector(".js-eyeclosed").addEventListener("click", () => {
+          jsEyeclosed();
+        });
+      </script>
+
+
+</body>
+</html>
