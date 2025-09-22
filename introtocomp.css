@@ -197,6 +197,7 @@ input{
   cursor: pointer;
 }
 
-.numbers .button{
-  color: #3AB027;
+.numbers button:active{
+    color: #FFFFFF;
 }
+

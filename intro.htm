@@ -1,581 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./introtocomp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./introtocomp.css">
+    <title>Introduction to Computer 105 - Quiz</title>
 </head>
 <body>
-  <div class="container">
-    <div class="left-side">
-      <header>
-        <h2>DANIEL JAMES </h2>
-        <p>(User: BBA/AC/2025/00251)</p>
-      </header>
-      <img src="./images/Ellipse 1.png" alt="">
-       <nav>
-        <button id="countdown-btn"></button>
-       </nav>
-       <button onclick="nextQuestion()">
-        Next Question
-       </button>
-       <button  onclick="prevQuestion()">
-        Last Question
-       </button>
+    <div class="container">
+        <aside class="left-side">
+            <header>
+                <h2>DANIEL JAMES</h2>
+                <p>(User: BBA/AC/2025/00251)</p>
+            </header>
+            <img src="./images/Ellipse 1.png" alt="User Image">
+            <nav>
+                <button id="countdown-btn"></button>
+            </nav>
+            <button onclick="prevQuestion()">Last Question</button>
+            <button onclick="nextQuestion()">Next Question</button>
+        </aside>
+
+        <main class="right-side">
+            <header>
+                <img src="./images/raphael_book.png" alt="Book Icon">
+                <p>INTRODUCTION TO COMPUTER 105</p>
+                <img class="logo" src="./images/81b35b213d22a043c5f7df1ec32e0ef50863b973.png" alt="Logo">
+            </header>
+
+            <!-- Questions Start -->
+            <section class="questions"></section>
+                <!-- Question 1 -->
+                <div class="question" id="question1">
+                    <h2>QUESTION 1</h2>
+                    <p>What is the foundation and possible enhancement procedure of the first generation computer in this modern world.</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz1"> <span>A: Computer Degeneration.</span></label><br>
+                        <label><input type="radio" name="quiz1"> <span>B: Delight.</span></label><br>
+                        <label><input type="radio" name="quiz1"> <span>C: Virtual Games.</span></label><br>
+                        <label><input type="radio" name="quiz1"> <span>D: Sport.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question" id="question2">
+                    <h2>QUESTION 2</h2>
+                    <p>Which memory is volatile?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz2"> <span>A: ROM.</span></label><br>
+                        <label><input type="radio" name="quiz2"> <span>B: RAM.</span></label><br>
+                        <label><input type="radio" name="quiz2"> <span>C: Hard Disk.</span></label><br>
+                        <label><input type="radio" name="quiz2"> <span>D: SSD.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question" id="question3">
+                    <h2>QUESTION 3</h2>
+                    <p>What does the acronym "HTTP" stand for?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz3"> <span>A: HyperText Transfer Protocol.</span></label><br>
+                        <label><input type="radio" name="quiz3"> <span>B: HighText Transfer Program.</span></label><br>
+                        <label><input type="radio" name="quiz3"> <span>C: Hyperlink Transfer Protocol.</span></label><br>
+                        <label><input type="radio" name="quiz3"> <span>D: Hyper Transfer Process.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question" id="question4">
+                    <h2>QUESTION 4</h2>
+                    <p>The physical parts of a computer system are called _____.</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz4"> <span>A: Software.</span></label><br>
+                        <label><input type="radio" name="quiz4"> <span>B: Hardware.</span></label><br>
+                        <label><input type="radio" name="quiz4"> <span>C: Data.</span></label><br>
+                        <label><input type="radio" name="quiz4"> <span>D: Programs.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question" id="question5">
+                    <h2>QUESTION 5</h2>
+                    <p>Which of the following is NOT an input device?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz5"> <span>A: Keyboard.</span></label><br>
+                        <label><input type="radio" name="quiz5"> <span>B: Mouse.</span></label><br>
+                        <label><input type="radio" name="quiz5"> <span>C: Scanner.</span></label><br>
+                        <label><input type="radio" name="quiz5"> <span>D: Printer.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question" id="question6">
+                    <h2>QUESTION 6</h2>
+                    <p>The smallest unit of data in a computer is _____</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz6"> <span>A: Byte.</span></label><br>
+                        <label><input type="radio" name="quiz6"> <span>B: Bit.</span></label><br>
+                        <label><input type="radio" name="quiz6"> <span>C: Nibble.</span></label><br>
+                        <label><input type="radio" name="quiz6"> <span>D: Kilobyte.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question" id="question7">
+                    <h2>QUESTION 7</h2>
+                    <p>The term "booting" refers to _____.</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz7"> <span>A: Shutting down the computer.</span></label><br>
+                        <label><input type="radio" name="quiz7"> <span>B: Restarting a program.</span></label><br>
+                        <label><input type="radio" name="quiz7"> <span>C: Loading the operating system into memory.</span></label><br>
+                        <label><input type="radio" name="quiz7"> <span>D: Installing software.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question" id="question8">
+                    <h2>QUESTION 8</h2>
+                    <p>Which of these is NOT an example of system software?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz8"> <span>A: Operating System.</span></label><br>
+                        <label><input type="radio" name="quiz8"> <span>B: Utility Programs.</span></label><br>
+                        <label><input type="radio" name="quiz8"> <span>C: Word Processor.</span></label><br>
+                        <label><input type="radio" name="quiz8"> <span>D: Device Drivers.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question" id="question9">
+                    <h2>QUESTION 9</h2>
+                    <p>Which key is used to refresh a webpage in most browsers?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz9"> <span>A: F2.</span></label><br>
+                        <label><input type="radio" name="quiz9"> <span>B: F5.</span></label><br>
+                        <label><input type="radio" name="quiz9"> <span>C: F10.</span></label><br>
+                        <label><input type="radio" name="quiz9"> <span>D: Esc.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question" id="question10">
+                    <h2>QUESTION 10</h2>
+                    <p>Which computer generation used vacuum tubes?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz10"> <span>A: First Generation.</span></label><br>
+                        <label><input type="radio" name="quiz10"> <span>B: Second Generation.</span></label><br>
+                        <label><input type="radio" name="quiz10"> <span>C: Third Generation.</span></label><br>
+                        <label><input type="radio" name="quiz10"> <span>D: Fourth Generation.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 11 -->
+                <div class="question" id="question11">
+                    <h2>QUESTION 11</h2>
+                    <p>What does GUI stand for?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz11"> <span>A: Graphical User Interface.</span></label><br>
+                        <label><input type="radio" name="quiz11"> <span>B: General Utility Input.</span></label><br>
+                        <label><input type="radio" name="quiz11"> <span>C: Global User Instruction.</span></label><br>
+                        <label><input type="radio" name="quiz11"> <span>D: Guided User Interaction.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 12 -->
+                <div class="question" id="question12">
+                    <h2>QUESTION 12</h2>
+                    <p>The full form of BIOS is _____.</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz12"> <span>A: Basic Input Output System.</span></label><br>
+                        <label><input type="radio" name="quiz12"> <span>B: Binary Input Output System.</span></label><br>
+                        <label><input type="radio" name="quiz12"> <span>C: Basic Internal Output Setup.</span></label><br>
+                        <label><input type="radio" name="quiz12"> <span>D: Binary Internal Operation Software.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 13 -->
+                <div class="question" id="question13">
+                    <h2>QUESTION 13</h2>
+                    <p>A collection of 4 bits is called a _____.</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz13"> <span>A: Byte.</span></label><br>
+                        <label><input type="radio" name="quiz13"> <span>B: Word.</span></label><br>
+                        <label><input type="radio" name="quiz13"> <span>C: Nibble.</span></label><br>
+                        <label><input type="radio" name="quiz13"> <span>D: Register.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 14 -->
+                <div class="question" id="question14">
+                    <h2>QUESTION 14</h2>
+                    <p>Which of the following is permanent memory?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz14"> <span>A: RAM.</span></label><br>
+                        <label><input type="radio" name="quiz14"> <span>B: ROM.</span></label><br>
+                        <label><input type="radio" name="quiz14"> <span>C: Cache.</span></label><br>
+                        <label><input type="radio" name="quiz14"> <span>D: Register.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 15 -->
+                <div class="question" id="question15">
+                    <h2>QUESTION 15</h2>
+                    <p>Which of the following is NOT a programming language?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz15"> <span>A: Python.</span></label><br>
+                        <label><input type="radio" name="quiz15"> <span>B: Java.</span></label><br>
+                        <label><input type="radio" name="quiz15"> <span>C: MS Word.</span></label><br>
+                        <label><input type="radio" name="quiz15"> <span>D: C++.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 16 -->
+                <div class="question" id="question16">
+                    <h2>QUESTION 16</h2>
+                    <p>Which type of software manages computer hardware?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz16"> <span>A: Application Software.</span></label><br>
+                        <label><input type="radio" name="quiz16"> <span>B: System Software.</span></label><br>
+                        <label><input type="radio" name="quiz16"> <span>C: Utility Software.</span></label><br>
+                        <label><input type="radio" name="quiz16"> <span>D: Device Software.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 17 -->
+                <div class="question" id="question17">
+                    <h2>QUESTION 17</h2>
+                    <p>The process of finding and fixing errors in software is called _____.</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz17"> <span>A: Debugging.</span></label><br>
+                        <label><input type="radio" name="quiz17"> <span>B: Compiling.</span></label><br>
+                        <label><input type="radio" name="quiz17"> <span>C: Testing.</span></label><br>
+                        <label><input type="radio" name="quiz17"> <span>D: Execution.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 18 -->
+                <div class="question" id="question18">
+                    <h2>QUESTION 18</h2>
+                    <p>Which of these is NOT an example of secondary storage?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz18"> <span>A: CD.</span></label><br>
+                        <label><input type="radio" name="quiz18"> <span>B: Pen Drive.</span></label><br>
+                        <label><input type="radio" name="quiz18"> <span>C: RAM.</span></label><br>
+                        <label><input type="radio" name="quiz18"> <span>D: Hard Disk.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 19 -->
+                <div class="question" id="question19">
+                    <h2>QUESTION 19</h2>
+                    <p>Which of these is an example of an open-source operating system?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz19"> <span>A: Windows.</span></label><br>
+                        <label><input type="radio" name="quiz19"> <span>B: macOS.</span></label><br>
+                        <label><input type="radio" name="quiz19"> <span>C: Linux.</span></label><br>
+                        <label><input type="radio" name="quiz19"> <span>D: DOS.</span></label>
+                    </div>
+                </div>
+
+                <!-- Question 20 -->
+                <div class="question" id="question20">
+                    <h2>QUESTION 20</h2>
+                    <p>Which shortcut is used to copy selected text in Windows?</p>
+                    <div class="options-div">
+                        <label><input type="radio" name="quiz20"> <span>A: Ctrl + X.</span></label><br>
+                        <label><input type="radio" name="quiz20"> <span>B: Ctrl + V.</span></label><br>
+                        <label><input type="radio" name="quiz20"> <span>C: Ctrl + C.</span></label><br>
+                        <label><input type="radio" name="quiz20"> <span>D: Ctrl + Z.</span></label>
+                    </div>
+                </div>
+            </section>
+            <!-- Questions End -->
+
+            <!-- Navigation Buttons -->
+            <div class="numbers">
+                <nav class="top">
+                    <button onclick="myFunction2()" id="btn">1</button>
+                    <button onclick="myFunction1()" id="btn">2</button>
+                    <button onclick="myFunction3()" id="btn">3</button>
+                    <button onclick="myFunction4()" id="btn">4</button>
+                    <button onclick="myFunction5()" id="btn">5</button>
+                    <button onclick="myFunction6()" id="btn">6</button>
+                    <button onclick="myFunction7()" id="btn">7</button>
+                    <button onclick="myFunction8()" id="btn">8</button>
+                    <button onclick="myFunction9()" id="btn">9</button>
+                    <button onclick="myFunction10()" id="btn">10</button>
+                </nav>
+                <nav class="bottom">
+                    <button onclick="myFunction11()" id="btn">11</button>
+                    <button onclick="myFunction12()" id="btn">12</button>
+                    <button onclick="myFunction13()" id="btn">13</button>
+                    <button onclick="myFunction14()" id="btn">14</button>
+                    <button onclick="myFunction15()" id="btn">15</button>
+                    <button onclick="myFunction16()" id="btn">16</button>
+                    <button onclick="myFunction17()" id="btn">17</button>
+                    <button onclick="myFunction18()" id="btn">18</button>
+                    <button onclick="myFunction19()" id="btn">19</button>
+                    <button onclick="myFunction20()" id="btn">20</button>
+                </nav>
+            </div>
+        </main>
     </div>
-    <div class="right-side">
-      <header>
-        <img src="./images/raphael_book.png" alt="">
-        <p>
-          INTRODUCTION TO COMPUTER 105
-        </p>
-        <img class="logo" src="./images//81b35b213d22a043c5f7df1ec32e0ef50863b973.png" alt="">
-      </header>
-
-
-      <div class="question" id="question1">
-      <h2>
-        QUESTION 1
-      </h2>
-      <p>
-        What is the foundation and possible enhancement procedure of the first generation computer in this modern world.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Computer Degeneration.</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Delight.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Virtual Games.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Sport.</label>
-      </div>
-    </div>
-
-
-      <div class="question">
-      <h2>
-        QUESTION 2
-      </h2>
-      <p>
-        Which memory is volatile?
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: ROM.</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: RAM.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Hard Disk.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: SSD.</label>
-      </div>
-    </div>
-    <!-- Answer: B) RAM -->
-
-
-      <div class="question" id="question3">
-      <h2>
-        QUESTION 3
-      </h2>
-      <p>
-        What does the acronym "HTTP" stand for?
-      </p> 
-      <div class="options-div">
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: HyperText Transfer Protocol
-        .</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: HighText Transfer Program
-        .</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Hyperlink Transfer Protocol
-        .</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Hyper Transfer Process.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: A) HyperText Transfer Protocol -->
-
-
-
-      <div class="question" id="question4">
-      <h2>
-        QUESTION 4
-      </h2>
-      <p>
-        The physical parts of a computer system are called _____.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Software
-        .</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Hardware
-      .</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Data
-      .</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Programs
-      .</label>
-      </div>
-    </div>
-    <!-- Answer: B) Hardware -->
-
-
-      <div class="question" id="question5">
-      <h2>
-        QUESTION 5
-      </h2>
-      <p>
-        Which of the following is NOT an input device?
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Keyboard.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Mouse.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Scanner.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Printer.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: D) Printer -->
-
-
-    <div class="question" id="question6">
-      <h2>
-        QUESTION 6
-      </h2>
-      <p>
-        The smallest unit of data in a computer is _____
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Byte.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Bit.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Nibble.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Kilobyte.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: B) Bit -->
-
-
-    <div class="question" id="question7">
-      <h2>
-        QUESTION 7
-      </h2>
-      <p>
-        The term "booting" refers to _____.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A:  Shutting down the computer.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Restarting a program.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Loading the operating system into memory.
-        </label>
-      <br> D: Installing software.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: C) Loading the operating system into memory -->
-
-
-    <div class="question" id="question8">
-      <h2>
-        QUESTION 8
-      </h2>
-      <p>
-       Which of these is NOT an example of system software?
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A:Operating System.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Utility Programs.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Word Processor.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Device Drivers.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: C) Word Processor -->
-
-
-    <div class="question" id="question9">
-      <h2>
-        QUESTION 9
-      </h2>
-      <p>
-        Which key is used to refresh a webpage in most browsers?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: F2.</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: F5.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: F10.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Esc.</label>
-      </div>
-    </div>
-    <!-- Answer: B) F5 -->
-
-
-    <div class="question" id="question10">
-      <h2>
-        QUESTION 10
-      </h2>
-      <p>
-       Which computer generation used vacuum tubes?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A:First Generation.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Second Generation.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Third Generation.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Fourth Generation.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: A) First Generation -->
-
-
-     <div class="question" id="question11">
-      <h2>
-        QUESTION 11
-      </h2>
-      <p>
-        What does GUI stand for?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Graphical User Interface.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: General Utility Input.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Global User Instruction.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Guided User Interaction.
-        </label>
-      </div>
-    </div>
-
-
-     <div class="question" id="question12">
-      <h2>
-        QUESTION 12
-      </h2>
-      <p>
-        The full form of BIOS is _____.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Basic Input Output System.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Binary Input Output System
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Basic Internal Output Setup.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Binary Internal Operation Software.
-        </label>
-      </div>
-    </div>
-      <!-- Answer: A) Basic Input Output System -->
-
-
-     <div class="question" id="question13">
-      <h2>
-        QUESTION 13
-      </h2>
-      <p>
-         A collection of 4 bits is called a _____.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Byte.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Word.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Nibble.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Register.</label>
-      </div>
-    </div>
-    <!-- Answer: C) Nibble -->
-
-
-    <div class="question" id="question14">
-      <h2>
-        QUESTION 14
-      </h2>
-      <p>
-       Which of the following is permanent memory?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: RAM.</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: ROM.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Cache.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Register.</label>
-      </div>
-    </div>
-    <!-- Answer: B) ROM -->
-
-
-    <div class="question"  id="question15">
-      <h2>
-        QUESTION 15
-      </h2>
-      <p>
-        Which of the following is NOT a programming language?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Python.</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Java.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: MS Word.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: C++.</label>
-      </div>
-    </div>
-    <!-- Answer: C) MS Word -->
-
-
-    <div class="question" id="question16">
-      <h2>
-        QUESTION 16
-      </h2>
-      <p>
-       Which type of software manages computer hardware?
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Application Software.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: System Softwaret.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Utility Software.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Device Software.
-        </label>
-      </div>
-    </div> 
-    <!-- Answer: B) System Software -->
-
-
-
-    <div class="question"  id="question17">
-      <h2>
-        QUESTION 17
-      </h2>
-      <p>
-        The process of finding and fixing errors in software is called _____.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Debugging.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Compiling.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Testing.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Execution.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: A) Debugging -->
-
-
-    <div class="question"  id="question18" >
-      <h2>
-        QUESTION 18
-      </h2>
-      <p>
-        Which of these is NOT an example of secondary storage?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: CD.
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Pen Drive.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: RAM.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Hard Disk.
-        </label>
-      </div>
-    </div>
-    <!-- Answer: C) RAM -->
-
-
-    <div class="question"  id="question19">
-      <h2>
-        QUESTION 19
-      </h2>
-      <p>
-        Which of these is an example of an open-source operating system?
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Windows. 
-        </label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: macOS.
-        </label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Linux.
-        </label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: DOS.
-        </label>
-      </div>
-    </div>
-
-
-    <div class="question" id="question20">
-      <h2>
-        QUESTION 20
-      </h2>
-      <p>
-       Which shortcut is used to copy selected text in Windows?.
-      </p> 
-      <div class="options-div">
-             
-        <label for="option1"> <input type="radio" name="quiz"><pre> </pre> A: Ctrl + X.</label>
-      <br>
-        
-        <label for="option2"> <input type="radio" name="quiz"><pre> </pre> B: Ctrl + V.</label>
-      <br>
-        
-        <label for="option3">  <input type="radio" name="quiz"><pre> </pre> C: Ctrl + C.</label>
-      <br>
-        <label for="option4"> <input type="radio" name="quiz"><pre> </pre> D: Ctrl + Z.</label>
-      </div>
-    </div>
-    <!-- Answer: C) Ctrl + C -->
-
-
-      <div class="numbers">
-        <nav class="top">
-          <button onclick="myFunction1()" class="button">1 </button>
-          <button onclick="myFunction2()" >2</button>
-          <button onclick="myFunction3()" >3</button>
-          <button onclick="myFunction4()" >4 </button>
-          <button onclick="myFunction5()" >5 </button>
-          <button onclick="myFunction6()" >6 </button>
-          <button onclick="myFunction7()" >7 </button>
-          <button onclick="myFunction8()" >8 </button>
-          <button onclick="myFunction9()" >9 </button>
-          <button onclick="myFunction10()" >10 </button>         
-        </nav>
-        <nav class="bottom">
-          <button onclick="myFunction11()" >11 </button>
-          <button onclick="myFunction12()" >12 </button>
-          <button onclick="myFunction13()" >13 </button>
-          <button onclick="myFunction14()" >14 </button>
-          <button onclick="myFunction15()" >15 </button>
-          <button onclick="myFunction16()" >16 </button>
-          <button onclick="myFunction17()" >17 </button>
-          <button onclick="myFunction18()" >18 </button>
-          <button onclick="myFunction19()" >19 </button>
-          <button onclick="myFunction20()" >20 </button>
-        </nav>
-      </div>
-    </div>
-  </div>
-
 
     <script src="./intro.js"></script>
     <script src="./script.js"></script>
     <script src="./prev&next.js"></script>
-
 </body>
 </html>
